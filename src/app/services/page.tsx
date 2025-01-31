@@ -1,20 +1,19 @@
-"use client"
+'use client';
 import { Container } from '@/components/Container';
-import { Iconanimationbox } from '@/components/Iconanimationbox';
 
 import { Title } from '@/components/Title';
+import { Iconanimationbox } from '@/components/ui/Iconanimationbox';
 import { ServiceProviderData } from '@constants/index';
 import { ArrowUp } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
-
 
 const Servicepage = () => {
   return (
     <>
       <section className="py-5 md:py-8 min-h-[80vh]">
         <Container>
-          <Title className='md:pb-0'>Services I Provide</Title>
+          <Title className="md:pb-0">Services I Provide</Title>
           <Iconanimationbox />
           <div className="grid mt-4 grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 py-2">
             {ServiceProviderData?.map((res) => (
@@ -40,7 +39,6 @@ const Servicepage = () => {
               </div>
             ))}
           </div>
-          
         </Container>
       </section>
     </>

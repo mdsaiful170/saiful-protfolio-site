@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import React, { forwardRef, useRef } from 'react';
 
@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 
 import { CodeXml, User } from 'lucide-react';
 import { AnimatedBeam } from './animated-beam';
+
 
 const Circle = forwardRef<
   HTMLDivElement,
