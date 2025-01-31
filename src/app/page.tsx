@@ -20,7 +20,7 @@ const Homepage = () => {
             <h2 className="font-Garamond mb-2 text-3xl md:text-5xl tracking-wide capitalize  font-semibold  text-textColor/90 ">
               Hello I&apos;am
             </h2>
-            <h1 className="font-bold   text-4xl text-textColor font-Pacifico   md:text-6xl tracking-[.2rem] my-1.5">
+            <h1 className="font-bold   text-3xl text-textColor font-Pacifico md:text-6xl tracking-[.2rem] my-1.5">
               MD Saiful Islam.
             </h1>
           </div>

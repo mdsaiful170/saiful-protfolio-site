@@ -35,7 +35,7 @@ const Homedescription = () => {
             </motion.span>
           ))
         ) : (
-          <span className="text-textColor/50 text-sm md:text-base font-medium !text-justify ">
+          <span className="text-textColor/50 text-xs md:text-base font-medium !text-justify ">
             {description}
           </span>
         )}
