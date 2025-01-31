@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { useTypeWriter } from '@/hooks/use-type-writer';
 import { useEffect, useState } from 'react';
@@ -29,14 +29,13 @@ const Homedescription = () => {
                   : 'rgb(224 224 224 / 0.5)',
               }}
               transition={{ duration: 0.5, delay: index * 0.03 }}
-           
               key={index}
             >
               {char}
             </motion.span>
           ))
         ) : (
-          <span className="text-textColor/50 text-sm md:text-base font-medium text-justify ">
+          <span className="text-textColor/50 text-sm md:text-base font-medium !text-justify ">
             {description}
           </span>
         )}

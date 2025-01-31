@@ -60,4 +60,15 @@
   .text-stroke-hover {
     -webkit-text-stroke: 1px #00ff90;
   }
+  
+  @media (max-width: 270px) {
+    html {
+      font-size: 20%;
+    }
+  }
+  @media (max-width: 374px) {
+    html {
+      font-size: 85%;
+    }
+  }
 }

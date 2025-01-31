@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { Container } from '@/components/Container';
 import Homedescription from '@/components/Homedescription';
 import Photo from '@/components/Photo';
@@ -25,7 +25,7 @@ const Homepage = () => {
             </h1>
           </div>
 
-          <div className="w-full h-[220px]   md:h-[220px] lg:h-[170px] relative ">
+          <div className="w-full h-[290px]   md:h-[220px] lg:h-[170px] relative ">
             <div className="absolute top-0 left-0 w-full h-full">
               <Homedescription />
             </div>
