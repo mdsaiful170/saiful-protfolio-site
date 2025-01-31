@@ -1,21 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    @apply overflow-x-hidden scroll-smooth scroll-pt-5;
+  }
+  body {
+    @apply bg-bodyColor text-textColor leading-loose tracking-wide font-JetBrains  box-border;
+  }
+  p {
+    @apply font-JetBrains tracking-wider text-base font-medium text-textColor;
+  }
+  h1,
+  h2 {
+    @apply font-Pacifico text-2xl md:text-4xl  font-medium to-textColor  tracking-wider;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .hoverEffect {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .AnimationEffect {
+    @apply relative hover:text-lightSkey/90 transition-all duration-300 ease-in-out;
+  }
+  .AnimationEffect::before {
+    @apply content-[''] absolute  hover:left-0 right-0   transition-all duration-300 ease-in-out w-0 hover:w-full h-0.5 bg-hoverColor/90  bottom-0;
+  }
+
+  /* btn-hover style */
+  .btn-hover {
+    @apply bg-lightSkey/20 text-textColor  text-base hover:bg-hoverColor/80  font-bold rounded-full;
+  }
+  .shadowbox {
+    @apply rounded-[150px] bg-[#0c1810] shadow-[7px_7px_14px_#08110b,-7px_-7px_14px_#101f15];
+  }
+  .box-shadow {
+    @apply bg-gradient-to-br from-[#0b160e] to-[#0d1a11] shadow-[7px_7px_14px_#0a130d,-7px_-7px_14px_#0e1d13];
+  }
+  .box-shadow-1 {
+    @apply bg-gradient-to-br from-[#0d1a11] to-[#0b160e] shadow-[7px_7px_14px_#0a130d,_-7px_-7px_14px_#0e1d13];
+  }
+  .rounded-shadow {
+    @apply rounded-full bg-gradient-to-br from-[#0b160e] to-[#0d1a11] shadow-[5px_5px_10px_#060d08,-5px_-5px_10px_#122318];
+  }
+  .btn-shadow{
+    @apply bg-[#0c1810] shadow-[5px_5px_8px_#050a07,-5px_-5px_8px_#132619]
+  }
+}
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1px #e0e0e0;
+  }
+  .text-stroke-hover {
+    -webkit-text-stroke: 1px #00ff90;
+  }
 }
