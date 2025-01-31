@@ -1,6 +1,7 @@
 "use client"
 import { Container } from '@/components/Container';
 import { Iconanimationbox } from '@/components/Iconanimationbox';
+
 import { Title } from '@/components/Title';
 import { ServiceProviderData } from '@constants/index';
 import { ArrowUp } from 'lucide-react';
